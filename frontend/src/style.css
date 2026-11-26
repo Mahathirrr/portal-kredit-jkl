@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f4f6f8;
+  color: #1a1a1a;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 16px 40px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.btn {
+  border: 1px solid #2f6fed;
+  background: #2f6fed;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.btn.ghost {
+  background: #fff;
+  color: #2f6fed;
+}
+
+.btn.warn {
+  background: #c0392b;
+  border-color: #c0392b;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  padding: 10px 8px;
+  font-size: 14px;
+}
+
+.muted {
+  color: #666;
+}
+
+.print-sheet {
+  max-width: 800px;
+  margin: 24px auto;
+  background: #fff;
+  padding: 24px;
+  border: 1px solid #ddd;
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+  body {
+    background: #fff;
+  }
+}
